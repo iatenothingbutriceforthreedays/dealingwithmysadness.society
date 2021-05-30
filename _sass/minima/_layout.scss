@@ -17,11 +17,15 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
+  margin-right: $spacing-unit*0.4;
   float: left;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 .site-title-link {
   background-color: $grey-color-dark;
+  padding: 0px 6px 0px 4px; 
 
   &,
   &:visited {
@@ -47,6 +51,11 @@
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
+  max-width: 100%;
+
+  .trigger {
+    max-width: 100%;
+  }
 
   .nav-trigger {
       display: none;
@@ -57,6 +66,8 @@
   }
 
   .page-link {
+    display: inline-block; // not sure why this is necessary
+
     color: $text-color;
     line-height: $base-line-height;
 
@@ -72,7 +83,7 @@
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: $spacing-unit*0.4;
     }
   }
 
@@ -80,58 +91,58 @@
     color: $brand-color;
   }
 
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
+  // @include media-query($on-palm) {
+  //   position: absolute;
+  //   top: 9px;
+  //   right: $spacing-unit / 2;
+  //   background-color: $background-color;
+  //   border: 1px solid $grey-color-light;
+  //   border-radius: 5px;
+  //   text-align: right;
 
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-    }
+  //   label[for="nav-trigger"] {
+  //     display: block;
+  //     float: right;
+  //     width: 36px;
+  //     height: 36px;
+  //     z-index: 2;
+  //     cursor: pointer;
+  //   }
 
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
+  //   .menu-icon {
+  //     display: block;
+  //     float: right;
+  //     width: 36px;
+  //     height: 26px;
+  //     line-height: 0;
+  //     padding-top: 10px;
+  //     text-align: center;
 
-      > svg {
-        fill: $grey-color-dark;
-      }
-    }
+  //     > svg {
+  //       fill: $grey-color-dark;
+  //     }
+  //   }
 
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
+  //   input ~ .trigger {
+  //     clear: both;
+  //     display: none;
+  //   }
 
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
+  //   input:checked ~ .trigger {
+  //     display: block;
+  //     padding-bottom: 5px;
+  //   }
 
-    .page-link {
-      display: block;
-      padding: 5px 10px;
+  //   .page-link {
+  //     display: block;
+  //     padding: 5px 10px;
 
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
+  //     &:not(:last-child) {
+  //       margin-right: 0;
+  //     }
+  //     margin-left: 20px;
+  //   }
+  // }
 }
 
 
