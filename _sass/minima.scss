@@ -7,7 +7,11 @@
   src: url(fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
 }
 
-$base-font-family: "EB Garamond", serif !default;
+// Raleway from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;700;800;900&display=swap');
+
+$base-font-family: "Raleway", sans-serif !default;
+$serif-font-family: "EB Garamond", serif;
 $base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -15,7 +19,8 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     50px !default;
 
-$text-color:       #444 !default;
+$text-color:       #111 !default;
+$text-color-light: #aaa !default;
 $background-color: #fefefe !default;
 $brand-color:      #f0f !default;
 

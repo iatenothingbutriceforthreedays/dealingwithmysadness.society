@@ -3,8 +3,8 @@
  */
 .site-header {
   // margin: $spacing-unit;
-  border-top: 1px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-dark;
+  border-top: 1px double $text-color;
+  border-bottom: 1px double $text-color;
   // min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -13,7 +13,7 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 300;
+  font-weight: 600;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -24,12 +24,19 @@
 }
 
 .site-title-link {
-  background-color: $grey-color-dark;
-  padding: 0px 6px 0px 4px; 
+  // background-color: $text-color;
+
+  border-bottom: 4px solid $brand-color;
+
+  // border-bottom: 4px solid $brand-color;
+
+  padding: 0px 4px 0px 4px; 
+  // font-family: $serif-font-family;
 
   &,
   &:visited {
-    color: $grey-color-light;
+    // color: $background-color;
+    color: $text-color;
   }
   
   // &,
@@ -68,7 +75,7 @@
   .page-link {
     display: inline-block; // not sure why this is necessary
 
-    color: $text-color;
+    color: $text-color-light;
     line-height: $base-line-height;
 
     &,
@@ -266,14 +273,12 @@ $grad-stop: 50%;
   padding: $spacing-unit*2 0;
   text-align: justify;
 
+  font-family: $serif-font-family;
 
   & img {
     filter: saturate(0) brightness(0.8) contrast(1.3) brightness(1.1);  
     image-rendering: pixelated;
   }
-}
-
-body {
 }
 
 .post-header {
