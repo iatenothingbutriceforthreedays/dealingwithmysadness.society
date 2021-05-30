@@ -7,6 +7,6 @@ permalink: /stories/
 <!-- [Sea Cucumber](_stories/sea-cucumber.md)
  -->
 {% for story in site.stories %}
-  [{{story.title}}]({{story.url}})
+  [{{story.title}}]({{story.url | relative_url}})
 
 {% endfor %}
