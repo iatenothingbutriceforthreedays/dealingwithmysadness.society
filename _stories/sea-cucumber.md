@@ -18,7 +18,7 @@ I was sitting opposite her at the lunch table at work, we were eating salmon wit
 everyday at breakfast because she read online that eating them would make me live 
 long and be healthy.”
 
-![sea cucumber](/assets/images/sea-cucumber.jpg)
+![sea cucumber]({{ "/assets/images/sea-cucumber.jpg" relative_url }})
 
 “Did it work?” I asked.
 
